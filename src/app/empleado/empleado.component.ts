@@ -16,14 +16,15 @@ export class EmpleadoComponent implements OnInit {
 
   edad=18;
 
-  // empresa="Píldoras Informáticas";
+  empresa="Píldoras Informáticas";
 
+ 
   /* getEdad(){
 
     return this.edad;
   } */
 
-  habilitacionCuadro=true; 
+  habilitacionCuadro=false; 
 
   usuRegistrado=false; 
 
@@ -41,15 +42,13 @@ export class EmpleadoComponent implements OnInit {
 
     // this.textoDeRegistro="El usuario se acaba de registrar"; 
 
-    if((<HTMLInputElement>event.target).value=="Sí"){
+    if((<HTMLInputElement>event.target).value=="Si"){
       this.textoDeRegistro="El usuario se acaba de registrar"; 
     }else{
       this. textoDeRegistro="No hay nadie registrado";
     }
 
   }
-
-  
 
   constructor() { }
 
